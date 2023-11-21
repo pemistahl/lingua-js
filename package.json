@@ -1,0 +1,33 @@
+{
+  "name": "@pemistahl/lingua",
+  "version": "1.0.0",
+  "description": "An accurate natural language detection library, suitable for short text and mixed-language text",
+  "author": "Peter M. Stahl <pemistahl@gmail.com> (https://pemistahl.dev)",
+  "license": "Apache-2.0",
+  "homepage": "https://pemistahl.github.io/lingua-js",
+  "repository": "github:pemistahl/lingua-js",
+  "files": [
+    "browser",
+    "node",
+    "lingua.d.ts",
+    "lingua_bg.wasm.d.ts"
+  ],
+  "types": "lingua.d.ts",
+  "exports": {
+    "import": "./browser/lingua.js",
+    "require": "./node/lingua.js"
+  },
+  "sideEffects": ["./browser/lingua.js"],
+  "keywords": [
+    "language-processing",
+    "language-detection",
+    "language-recognition",
+    "nlp"
+  ],
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
